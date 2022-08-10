@@ -1,15 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import Navbar from './Components/Navbar'
+import Center from './Components/Center'
+import List from './Components/List'
+import Form from './Components/Form'
+import Footer from './Components/Footer'
+
+// ReactDOM.render(
+
+//  <Navbar/>,
+ 
+//   document.getElementById('root')
+// );
 
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   
- <h1>
- Hello this is react app
- </h1>,
-     
-  document.getElementById('root')
+   <div>
+     <Navbar />
+    <Center/>
+    <List/>
+    <Form/>
+    <Footer/>
+   </div>
+
 );
-
-
